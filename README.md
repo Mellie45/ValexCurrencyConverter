@@ -1,10 +1,13 @@
 # app
 
+If you wish to download and use this source code, you will need you to add your own api keys to work. 
+You can create your own account at https://openexchangerates.org Thanks for your interest and good luck
+
 A new Flutter project.
 
 ## Getting Started
 
-This project is a starting point for a Flutter application.
+If you're interested in learning flutter you are free to use this project is a starting point for an application.
 
 A few resources to get you started if this is your first Flutter project:
 
