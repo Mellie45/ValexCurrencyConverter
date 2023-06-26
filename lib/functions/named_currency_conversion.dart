@@ -5,7 +5,7 @@ import '../utilities/back_button.dart';
 import '../utilities/rounded_button.dart';
 
 class NamedCurrencies extends StatefulWidget {
-  final rates;
+  final dynamic rates;
   final Map currencies;
   const NamedCurrencies({Key? key, @required this.rates, required this.currencies}) : super(key: key);
 
@@ -51,7 +51,7 @@ class _NamedCurrenciesState extends State<NamedCurrencies> {
       } else if (val == 4) {
         setState(() {
           countryVal = 'USD';
-          textFieldHelperText = 'Dollars';
+          textFieldHelperText = 'American Dollars';
           coreColor = Colors.lightBlueAccent;
         });
       } else if (val == 5) {
@@ -59,6 +59,12 @@ class _NamedCurrenciesState extends State<NamedCurrencies> {
           countryVal = 'AED';
           textFieldHelperText = 'Dirhams';
           coreColor = Colors.greenAccent;
+        });
+      } else if (val == 6) {
+        setState(() {
+          countryVal = 'HKD';
+          textFieldHelperText = 'Hong Kong Dollars';
+          coreColor = Colors.pinkAccent;
         });
       } else {
         setState(() {

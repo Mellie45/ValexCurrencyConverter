@@ -57,6 +57,12 @@ class _DisplayDataState extends State<DisplayData> {
         locationText = 'DUBAI';
         coreColor = Colors.greenAccent;
       });
+    } else if (val == 6) {
+      setState(() {
+        img = 'assets/hong_kong.png';
+        locationText = 'HONG KONG';
+        coreColor = Colors.pinkAccent;
+      });
     } else {
       setState(() {
         img = 'assets/travel.png';

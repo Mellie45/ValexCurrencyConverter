@@ -4,7 +4,7 @@ import 'package:flutter/material.dart';
 import 'fetch_rates.dart';
 
 class ConvertAllCurrencies extends StatefulWidget {
-  final rates;
+  final dynamic rates;
   final Map currencies;
   const ConvertAllCurrencies({Key? key, required this.rates, required this.currencies}) : super(key: key);
 

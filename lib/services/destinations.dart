@@ -61,18 +61,6 @@ class _DestinationsState extends State<Destinations> {
               mainColor: Colors.amber,
               buttonText: 'CROATIA',
               padding: 8.0),
-          /*RoundedButton(
-              borderColor: Colors.yellowAccent,
-              borderWidth: 0.6,
-              opacity: 0.5,
-              onPressed: () async {
-                final SharedPreferences preferences = await prefs;
-                preferences.setInt('value', 1);
-                if (mounted) Navigator.push(context, MaterialPageRoute(builder: (context) => const DisplayData()));
-              },
-              mainColor: Colors.yellowAccent,
-              buttonText: 'EGYPT',
-              padding: 8.0),*/
           RoundedButton(
               borderColor: Colors.greenAccent,
               borderWidth: 0.6,
@@ -84,6 +72,18 @@ class _DestinationsState extends State<Destinations> {
               },
               mainColor: Colors.greenAccent,
               buttonText: 'DUBAI',
+              padding: 8.0),
+          RoundedButton(
+              borderColor: Colors.pinkAccent,
+              borderWidth: 0.6,
+              opacity: 0.5,
+              onPressed: () async {
+                final SharedPreferences preferences = await prefs;
+                preferences.setInt('value', 6);
+                if (mounted) Navigator.push(context, MaterialPageRoute(builder: (context) => const DisplayData()));
+              },
+              mainColor: Colors.pinkAccent,
+              buttonText: 'HONG KONG',
               padding: 8.0),
           RoundedButton(
               borderColor: Colors.white,

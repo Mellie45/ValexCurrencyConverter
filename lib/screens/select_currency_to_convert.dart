@@ -55,7 +55,7 @@ class CurrencySelector extends StatelessWidget {
               const SizedBox(
                 height: 12.0,
               ),
-              const Destinations(),
+              const SingleChildScrollView(child: Destinations()),
             ],
           ),
         ),
