@@ -6,10 +6,7 @@ import '../models/rates_model.dart';
 import '../utilities/back_button.dart';
 
 class AllCurrencies extends StatefulWidget {
-  const AllCurrencies({Key? key})
-      : super(
-          key: key,
-        );
+  const AllCurrencies({Key? key}) : super(key: key);
 
   @override
   State<AllCurrencies> createState() => _AllCurrenciesState();
@@ -58,12 +55,8 @@ class _AllCurrenciesState extends State<AllCurrencies> {
                   children: [
                     const SizedBox(height: 30),
                     const RotatedBox(
-                      quarterTurns: 3,
-                      child: Text(
-                        'ALL CURRENCIES',
-                        style: TextStyle(color: Colors.white, fontSize: 18, letterSpacing: 1.4),
-                      ),
-                    ),
+                        quarterTurns: 3,
+                        child: Text('ALL CURRENCIES', style: TextStyle(color: Colors.white, fontSize: 18, letterSpacing: 1.4))),
                     Padding(
                       padding: const EdgeInsets.only(left: 8.0),
                       child: Column(
@@ -87,16 +80,11 @@ class _AllCurrenciesState extends State<AllCurrencies> {
                                         return Column(
                                           mainAxisAlignment: MainAxisAlignment.center,
                                           children: [
-                                            ConvertAllCurrencies(
-                                              rates: snapshot.data!.rates,
-                                              currencies: currencySnapshot.data!,
-                                            ),
+                                            ConvertAllCurrencies(rates: snapshot.data!.rates, currencies: currencySnapshot.data!),
                                           ],
                                         );
                                       }
-                                      return const Center(
-                                        child: Text('Failed'),
-                                      );
+                                      return const Center(child: Text('Failed'));
                                     });
                               },
                             ),

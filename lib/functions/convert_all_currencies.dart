@@ -14,8 +14,8 @@ class ConvertAllCurrencies extends StatefulWidget {
 
 class _ConvertAllCurrenciesState extends State<ConvertAllCurrencies> {
   TextEditingController amountController = TextEditingController();
-  String dropdownValue1 = 'AUD';
-  String dropdownValue2 = 'AUD';
+  String dropdownValue1 = 'GBP';
+  String dropdownValue2 = 'EUR';
   String result = '00.00';
 
   @override
@@ -115,7 +115,7 @@ class _ConvertAllCurrenciesState extends State<ConvertAllCurrencies> {
               RoundedButton(
                   onPressed: () {
                     setState(() {
-                      result = '${amountController.text} $dropdownValue1 ${convertAny(
+                      result = '${amountController.text} $dropdownValue1 = \n${convertAny(
                         widget.rates,
                         amountController.text,
                         dropdownValue1,
@@ -136,7 +136,7 @@ class _ConvertAllCurrenciesState extends State<ConvertAllCurrencies> {
               Text(
                 result,
                 style: const TextStyle(
-                  fontSize: 34,
+                  fontSize: 28,
                   color: Colors.white,
                 ),
               )
